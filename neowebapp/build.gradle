@@ -13,6 +13,9 @@ dependencies {
 	compile ('org.springframework:spring-context:' + springVersion)
 	compile ('org.springframework:spring-core:' + springVersion)
 	compile ('org.springframework:spring-webmvc:' + springVersion)
+	compile ('org.springframework:spring-tx:' + springVersion)
+	compile ('org.springframework:spring-orm:' + springVersion)
+	compile ('org.springframework:spring-web:' + springVersion)
 	
 	//aspects
 	compile 'org.aspectj:aspectjrt:1.8.2'
@@ -35,9 +38,25 @@ dependencies {
 	compile 'org.hibernate:hibernate-core:4.3.6.Final'
 	compile 'org.hibernate:hibernate-annotations:3.+'
 	
+	//validation
+	compile 'javax.validation:validation-api:1.1.0.Final'
+	compile 'org.hibernate:hibernate-validator:5.3.4.Final'
+	
 	//mysql
 	compile 'mysql:mysql-connector-java:5.1.31'
 	compile 'commons-dbcp:commons-dbcp:1.4'//连接池
+	
+	//redis
+	compile('redis.clients:jedis:2.9.0')
+	compile ('org.springframework.data:spring-data-redis:1.7.6.RELEASE')
+	
+	//json
+	compile ('com.fasterxml.jackson.core:jackson-databind:2.8.5')
+    compile ('org.codehaus.jackson:jackson-mapper-asl:1.9.13')
+    compile ('org.codehaus.jackson:jackson-core-asl:1.9.13')
+    
+    //xml
+    compile ('org.springframework:spring-oxm:' + springVersion)
 	
 	//test
 	testCompile 'junit:junit:4.+'
