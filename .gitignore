@@ -1,6 +1,6 @@
 
-neowebapp/build/*
-neowebapp/target/*
-neowebapp/bin/*
-.metadata/*
+/neowebapp/build/
+/neowebapp/target/
+/neowebapp/bin/
+/.metadata/
 
