@@ -1,6 +1,5 @@
 
-/neowebapp/build/
-/neowebapp/target/
-/neowebapp/bin/
-/.metadata/
+/.metadata/*
+*.war
+/.gradle/*
 
