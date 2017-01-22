@@ -3,4 +3,5 @@
 *.war
 /.gradle/*
 *.class
+/RemoteSystemsTempFiles/*
 
